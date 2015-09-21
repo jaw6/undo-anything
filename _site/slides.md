@@ -2,8 +2,8 @@ template: title
 
 .mega-octicon.octicon-mark-github[]
 
-# Undo, Redo
-# Change History
+# How to Undo
+# Almost* Anything
 # with Git
 
 ---
@@ -15,15 +15,8 @@ template: section
 ## Joshua Wehner
 
 ### **`@jaw6`**
+#### http://bit.ly/undo-sept22
 
----
-
-template: content
-
-# Undo & Redo
-## Scenarios
-
-http://bit.ly/some-url-here
 
 ---
 
