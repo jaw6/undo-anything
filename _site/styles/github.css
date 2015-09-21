@@ -96,6 +96,16 @@ body {
     color: #A7AAA9;
     text-transform: uppercase; }
 
+.jaw6 {
+  width: 225px;
+  height: 225px;
+  margin-top: -80px;
+  margin-left: -150px;
+  margin-right: 50px;
+  color: #52575E;
+  background: url("https://avatars.githubusercontent.com/u/2077?v=3") center center no-repeat;
+  background-size: contain; }
+
 .remark-slide-container {
   background: #A2A9B3; }
 

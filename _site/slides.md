@@ -10,14 +10,11 @@ template: title
 
 template: section
 
-.mega-octicon.octicon-mark-github[]
+.mega-octicon.jaw6[]
 
 ## Joshua Wehner
 
-* **`@jaw6`**
-* `jaw6@github.com`
-* Minneapolis, MN, USA
-* GitHub Training
+### **`@jaw6`**
 
 ---
 
