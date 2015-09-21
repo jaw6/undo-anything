@@ -1,0 +1,202 @@
+---
+---
+
+$normal-font: "Source Sans Pro";
+
+{% if site.theme == "light" %}
+// Light Theme
+$theme-background-color: #ECEFF3;
+$theme-text-color: #53585F;
+$theme-header-background-color: #FFF;
+$theme-header-text-color: #969696;
+$theme-border-color: #50A952;
+$theme-code-border-color: #D9DCDF;
+$theme-octicon-color: #52575E;
+{% else %}
+// Dark Theme
+$theme-background-color: #2F3232;
+$theme-text-color: #DCDEE0;
+$theme-header-background-color: #414140;
+$theme-header-text-color: #A0A09F;
+$theme-border-color: #E76938;
+$theme-code-border-color: #5E5E5E;
+$theme-octicon-color: #A6AAA9;
+{% endif %}
+
+body {
+  font-family: $normal-font;
+}
+
+.remark-slide {
+  background-color: $theme-background-color;
+  color: $theme-text-color;
+}
+
+.remark-slide-content {
+  background-color: inherit;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 100;
+    widows: 2;
+    orphans: 2;
+
+    & + p {
+      margin-top: 0;
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 24px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: $theme-header-background-color;
+    color: $theme-header-text-color;
+
+    .tagline {
+      float: right;
+      margin-right: 38px;
+    }
+  }
+
+  li {
+    font-weight: bold;
+  }
+
+  li li {
+    font-weight: normal;
+    font-size: 0.85em;
+  }
+
+  li li li {
+    font-weight: 100;
+  }
+}
+
+.title-slide {
+  padding-top: 150px;
+  text-align: center;
+
+  .mega-octicon {
+    font-size: 200px;
+    color: $theme-octicon-color;
+  }
+}
+
+.section-slide {
+  padding-left: 25%;
+  padding-top: 15%;
+
+  h1 {
+    font-weight: bold;
+  }
+
+  .mega-octicon {
+    float: left;
+    margin-left: -20%;
+
+    border: 2px solid $theme-border-color;
+    border-radius: 100%;
+    padding: 50px;
+    color: $theme-octicon-color;
+  }
+}
+
+.title-top {
+  padding-top: 128px;
+  font-size: 36px;
+
+  h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 36px;
+    padding: 18px 24px;
+    background-color: $theme-header-background-color;
+    color: $theme-header-text-color;
+
+    .octicon {
+      float: right;
+      padding: 18px;
+      margin: -4px 0;
+
+      border: 1px solid $theme-border-color;
+      border-radius: 100%;
+    }
+  }
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  margin: 36px;
+  text-align: center;
+
+  .mega-octicon {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid $theme-border-color;
+    margin: -4px 0;
+    border-radius: 100%;
+  }
+
+  h2 {
+    font-weight: bold !important;
+    color: #A7AAA9;
+    text-transform: uppercase;
+  }
+}
+
+// Remark styles
+
+.remark-slide-container {
+  background: #A2A9B3;
+}
+
+
+.remark-slide-number {
+  font-size: 14px;
+  border: 1px solid #A7AAA9;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  text-align: center;
+}
+
+// Syntax Highlighting
+.remark-code.hljs { // chained class name to increase specificity
+  padding: 2em;
+  border-radius: 3px;
+  border-top: 25px solid $theme-code-border-color;
+  border-radius: 6px;
+}
+
+pre {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    content: "\f052 \f052 \f052 ";
+    font-family: "octicons";
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing: 0.4em;
+    color: white;
+  }
+}
