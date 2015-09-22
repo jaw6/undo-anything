@@ -12,7 +12,7 @@ do
   fi
 
   echo "Generating slide_${padded}.png..."
-  phantomjs rasterize.js "http://localhost:4000/#${i}" tmp/slide_${padded}.png "1280px*720px"
+  phantomjs script/rasterize.js "http://localhost:4000/#${i}" tmp/slide_${padded}.png "1280px*720px"
   joiner="${joiner} tmp/slide_${padded}.png "
 done
 
