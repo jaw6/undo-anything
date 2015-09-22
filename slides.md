@@ -173,7 +173,7 @@ template: section
 .mega-octicon.octicon-mark-github[]
 
 # Thank You!
-## Undo, Redo, Change History
+## How to Undo Almost* Anything with Git
 ### **`@jaw6`**
 
 http://training.github.com/
